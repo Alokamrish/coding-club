@@ -4,15 +4,15 @@ fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
     const leaderboardDiv = document.getElementById('leaderboard');
 
     data.forEach(entry => {
-      const row = document.createElement('div');
-      row.classList.add('row');
+      const span = document.createElement('div');
+      span.classList.add('span');
 
       const name = document.createElement('p');
       name.classList.add('p');
       name.textContent = entry.name;
 
-      const point = document.createElement('div');
-      points.classList.add('score');
+      const points = document.createElement('div');
+      points.classList.add('points');
       points.textContent = entry.points
 
       row.appendChild(name);
